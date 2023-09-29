@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Franklin:wght@400&family=Space+Mono&display=swap');
+
+html {
+    font-family: 'Libre Franklin', 'Caveat',  sans-serif;
+    box-sizing: border-box;
+    padding-left: 5%;
+    line-height: 1.5;
+    font-size: 1.4em;
+}
+
+body {
+    background-color: lightblue;
+    background-image: linear-gradient(62deg, rgb(127, 174, 235), rgb(240, 169, 230));
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #fff;
+    text-shadow: 0 0 7px #f23496,
+                 0 0 10px #f23496,
+                 0 0 21px #f23496,
+                 0 0 42px #fff,
+                 0 0 52px #fff,
+                 0 0 62px #fff,
+                 0 0 72px #fff;
+}
+
+.skills-list {
+    list-style-type: circle;
+}
