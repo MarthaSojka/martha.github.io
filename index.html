@@ -2,65 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFG Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no"/>
+
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-
-    <button id="dark_mode_button" onclick="darkMode()">Dark Mode</button>
-
+    <button class="btn" id="btn" onclick="changeMode()">Dark Mode</button>
+    
     <header>
-        <h1>My CFG Portfolio</h1>
-        <h2> About Me </h2>
-        <span id="about-description"> My name is Martha and I am 40 and try to become a software engeneer / web developer.</span>
+        <h1 class="heading"><a href=index.html>My Portfolio</a></h1>
+        <button class="menu-toggle">&#9776;</button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a>
+                        <ul class="subnav">
+                            <li><a href="index.html#me">Intro</a></li>
+                            <li><a href="#cont">Contact</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="skills.html">Skills</a>
+                        <ul class="subnav">
+                            <li><a href="skills.html#tech">Tech Stack</a></li>
+                            <li><a href="skills.html#soft">Soft Skills</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="projects.html">Projects</a>
+                        <ul class="subnav">
+                            <li><a href="projects.html#project_1">Project 1</a></li>
+                            <li><a href="projects.html#project_2">Project 2</a></li>
+                            <li><a href="projects.html#project_3">Project 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="expert.html">Expertise</a>
+                        <ul class="subnav">
+                            <li><a href="expert.html#exp">Experience</a></li>
+                            <li><a href="expert.html#edu">Education</a></li>
+                            <li><a href="expert.html#cert">Certificates</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="hobby.html">Hobby</a>
+                        <ul class="subnav">
+                            <li><a href="hobby.html">Smart Home</a></li>
+                            <li><a href="hobby.html#music">Music</a></li>
+                            <li><a href="hobby.html#sport">Sport</a></li>
+                            <li><a href="hobby.html#moto">Motorcycle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#cont">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
     </header>
     
-    <div class="skills">
-        <h2>My tech skills</h2>
-        <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaSrcipt</li>
-            <li>PHP</li>
-            <li>SQL</li>
-        </ul>
+    
+    
+    <h2 class="heading" id="me"> About Me </h2>
+    <div class="about">
+        <img src="./foto/myfoto.jpg" id="myfoto" alt="private foto" />
+        <div>
+            <p>My name is Martha and I would like to become a software engineer. </p>
+            <p>A technical mindset and the ease of mastering new technologies and software are the key aspects that have fueled my desire to further develop in the IT industry.</p>
+            <p>My extensive experience in customer service, coupled with excellent interpersonal and communication skills, have prepared me to gather, manage, and confirm business requirements, as well as foster positive relationships within cross-functional teams.</p>
+            <p>I excel in analytical thinking, problem-solving, and have an active approach to tasks, making me well-suited to provide technological solution that meet customer expectations.</p>
+            <p>I have a strong eagerness to develop professionally and deep interests in innovation, complemented by comprehensive understanding spanning business, and IT domains, forming the foundation for performing effectively in demanding projects.</p>
+        </div>
     </div>
-    <div class="skills">
-        <h2>My soft skills</h2>
-        <div id="project_1">
-            <h3> Project 1</h3>
-            <p> This is were I tell you about my project.</p>
+
+
+    <div class="container">
+        <div class="content flex">
+            <a href="skills.html" class="box">
+                <h2 class="heading" id="tech">Tech Stack</h2>
+                <p>I'm on a journey to expand my knowledge and skills in the world of programming. Learning programming languages like JavaScript and Python is a fundamental part of my ongoing growth. These languages provide me with the tools to bring my ideas to life and contribute to innovative projects. I'm excited about the endless possibilities that mastering these languages will offer in my career.</p>
+            </a>
         </div>
-        <div id="project_2">
-            <h3> Project 2</h3>
-            <p> This is were I tell you about my experience.</p>
+        
+        
+        <div class="content flex">
+            <a href="skills.html#soft" class="box">
+                <h2 class="heading" id="soft">Soft Skills</h2>
+                <p>While technical skills are crucial in the IT field, I firmly believe that soft skills are equally indispensable. Effective communication, problem-solving abilities, and a proactive approach are qualities that enhance teamwork and ensure successful collaboration with clients. These skills are the cornerstone of my professional journey, enabling me to navigate complex projects and deliver valuable solutions.</p>
+            </a>
         </div>
-        <div id="project_3">
-            <h3> Project 3</h3>
-            <p> This is were I tell you about my experience.</p>
-        </div> 
+
+        
+        <div class="content flex">
+            <a href="projects.html" class="box">
+                <h2 class="heading" id="proj">Projects</h2>
+                <p>This website is just my first project, but I hope there will be next projects quite soon. I'm enthusiastic about creating a variety of projects in the near future, each presenting a new opportunity for growth and innovation, and I'm excited to tackle the challenges and successes they will bring.</p>
+            </a>
+        </div>
+        
+        
+        <div class="content flex">
+            <a href="expert.html" class="box">
+                <h2 class="heading" id="exp"> Professional Experience</h2>
+                <p>My experience in business and client interactions, has equipped me with comprehensive knowledge of customer service, company processes, and commercial awareness. This background serves as a strong foundation for my career aspirations in the IT industry, enabling me to apply my expertise effectively in various IT-related projects.</p>
+                <ul class="list">
+                    <li><a href="./expert.html#exp"> E-commerce Business Manager </a></li> 
+                    <li><a href="./expert.html#exp"> Office Manager </a></li>
+                    <li><a href="./expert.html#exp"> Customer Service Area Manager </a></li>
+                </ul>
+            </a>
+        </div>
+
+        <div class="content flex">
+            <a href="expert.html#edu" class="box">
+                <h2 class="heading" id="edu">Education Path</h2>
+                <p>Equipped with a multifaceted educational background, I possess both a master's and bachelor's degree in economics, alongside technical training in IT and electronics from high school. This comprehensive foundation provides  me with a well-rounded skill set, uniquely positioned to bridge the worlds of IT and business economics. </p>
+                <ul class="list">
+                    <li><a href="./expert.html#edu"> Master of Economics </a></li> 
+                    <li><a href="./expert.html#edu"> Bachelor Degree of Economics </a></li>
+                    <li><a href="./expert.html#edu"> Electronic Technical School </a></li>
+                </ul>
+            </a>
+        </div>
+
+        <div class="content flex">
+            <a href="expert.html#cert" class="box">
+                <h2 class="heading" id="cert">Trainings & Certificates</h2>
+                <div>
+                    <p>I've had the privilege of participating in two enriching training programs organized by Code First Girls, focusing on web development and Python. These experiences have fueled my passion for learning and exploring the ever-evolving world of coding. I eagerly look forward to the prospect of engaging in more of these invaluable learning opportunities.</p>
+                    <ul class="list">
+                    <li>Code First Girls - <a href="expert.html#cert">Intro to Web Development</a></li>
+                    <li>Code First Girls - <a href="expert.html#cert">Intro to Python</a></li>
+                    </ul>        
+                </div>
+            </a>
+        </div>
+
+        <div class="content">
+            <a href="hobby.html" class="box">
+                <h2 class="heading" id="hobby">My Hobby</h2>
+                <p>Coupled with my fascination for technology, I have a profound interest in home infrastructure design and smart home solutions. The prospect of crafting innovative and efficient living spaces that seamlessly blend with modern tech is an area that continually captivates my imagination.</p>
+                
+                <p>Beyond the world of IT that occupies the center of my professional journey and future aspirations, my life is colored by a wide array of diverse interests. From music and martial arts to swimming and a love for motorcycles, I find joy and balance in the tapestry of my passions. These varied pursuits bring depth and richness to my life, reminding me of the countless ways to find inspiration and excitement beyond the realm of technology.</p>
+                <ul class="list" id="hobby-list">
+                    <li><a href="hobby.html#home">Home infrastructure design & smart home solutions</a></li>
+                    <li><a href="hobby.html#music">Music: listening and playing</a></li>
+                    <li><a href="hobby.html#sport">Sport: aikido, swimming</a></li>
+                    <li><a href="hobby.html#moto">Motorcycles</a></li>
+                </ul>        
+            </a>
+        </div>
     </div>
-    <div id="All Projects">
-        <h2>My experience</h2>
-        <div id="project_1">
-            <h3> Project 1</h3>
-            <p> This is were I tell you about my project.</p>
-        </div>
-        <div id="project_2">
-            <h3> Project 2</h3>
-            <p> This is were I tell you about my experience.</p>
-        </div>
-        <div id="project_3">
-            <h3> Project 3</h3>
-            <p> This is were I tell you about my experience.</p>
-        </div> 
-    </div>    
+
 
     <footer>
-        <h2> Work With Me</h2>
-        <p>Phone <a href="#">+48 501 930 190</a></p>
-        <p>E-mail <a href="#">martasojka83@gmail.com</a></p>
+        <hr class="bottom-line">
+        <h2 class="heading" id="cont"> Work With Me</h2>
+        <ul class="contact">
+            <li> <a href="tel:+48501930190" class="contact">Phone</a></li>
+            <li> <a href="mailto:martasojka83@gmail.com" class="contact">E-mail </a></li>
+            <li> <a href="https://www.linkedin.com/in/marta-sojka-a7203a263/" class="contact" target="_blank">LinedIn</a></li>
+            <li> <a href="https://github.com/MarthaSojka" class="contact" target="_blank">GitHub</a></li>
+        </ul>
+        <div id="top">
+            <a href="#">Back to Top</a>
+        </div>
+        <p class="copyright">&copy; 2023 Martha Jay</p>
     </footer>
     <script src="script.js"></script>
 </body>
